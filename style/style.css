@@ -10,10 +10,16 @@
     color: #000000;
 }
 
-body, main {
-    width: 100vw;
+body, html {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
+main {
+    width: 100%;
+}
 
 /* ======================= NAV ============================== */
 
@@ -48,13 +54,11 @@ nav ul li a {
     text-align: right;
 }
 
-
-nav a {
+.home__link {
     padding: 5%;
-    width: 35%;
 }
 
-.nav a img {
+.home__link img {
     width: 100%;
 }
 
@@ -75,11 +79,7 @@ nav a {
 }
 
 img {
-    width: 95%;
-}
-
-.image__presentation {
-    padding: 5% 0;
+    width: 90%;
 }
 
 h1 {
@@ -93,12 +93,20 @@ p {
     font-size: 1em;
 }
 
+.flex__presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+}
+
 .start__button {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0 5%;
+    width: 75%;
 }
 
 .start__button input {
@@ -145,17 +153,13 @@ button:hover {
     padding-bottom: 8%;
 }
 
-.description__section img {
-    padding: 5% 0;
-}
-
 .description__flex {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-left: 3%;
     text-align: left;
+    padding-left: 5%;
 }
 
 h2 {
@@ -195,7 +199,7 @@ h2 {
     flex-direction: column;
     justify-content: flex-start;
     font-family: 'Open Sans', sans-serif;
-    margin: 5%;
+    padding: 5%;
     width: 90%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     margin-bottom: 3%;
@@ -266,7 +270,7 @@ h2 {
 }
 
 .action__card .start__button {
-    width: 100%;
+    width: 50%;
 }
 
 .action__card .start__button button {
@@ -298,7 +302,11 @@ footer section {
 }
 
 .contact__footer a img {
-    width: 50%;
+    width: 45%;
+}
+
+.info__footer--flex {
+    width: 100%;
 }
 
 .contact__flex {
@@ -312,9 +320,7 @@ footer section {
 .contact__flex div {
     display: flex;
     align-items: center;
-    padding-left: 8%;
     width: 90%;
-    margin-bottom: 2%;
 }
 
 .contact__flex p {
@@ -356,6 +362,7 @@ footer section {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50%;
 }
 
 .socialmedia__links a {
@@ -420,11 +427,6 @@ nav ul li a {
 }
 
 .flex__presentation {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-left: 3%;
     text-align: left;
 }
 
@@ -444,7 +446,6 @@ nav ul li a {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding-left: 3%;
     text-align: left;
 }
 
@@ -471,6 +472,7 @@ nav ul li a {
 
 .ceo__card {
     width: 75%;
+    margin-left: 3%;
 }
 
 .ceo__card img {
@@ -517,14 +519,13 @@ nav ul li a {
 
 .acces__flex p {
     text-align: left;
-    padding: 0 0 10% 10%;
+    padding: 0 5% 10% 10%;
 }
 
 .start__button {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 0 8%;
     width: 90%;
 }
 
@@ -548,6 +549,7 @@ nav ul li a {
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    width: 100%;
 
 }
 
