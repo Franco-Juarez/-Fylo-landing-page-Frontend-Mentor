@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+/* ======================= RESET ============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    color: #000000;
+}
+
+body, main {
+    width: 100vw;
+}
+
+
+/* ======================= NAV ============================== */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul {
+    padding: 3%;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 2%;
+    font-size: 0.8em;
+}
+
+nav ul li a {
+    color: #000000;
+    font-size: 1em;
+    text-align: right;
+}
+
+
+nav a {
+    padding: 5%;
+    width: 35%;
+}
+
+.nav a img {
+    width: 100%;
+}
+
+/* ================================ MAIN ===================================== */
+
+/* ======================= PRESENTATION SECTION ============================== */
+
+.presentation__section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10%;
+    animation-name: main__efx;
+    animation-duration: 1.5s;
+}
+
+img {
+    width: 95%;
+}
+
+.image__presentation {
+    padding: 5% 0;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    padding: 5%;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    padding: 5%;
+    font-size: 1em;
+}
+
+.start__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 5%;
+}
+
+.start__button input {
+    border: 1px solid #000000;
+    padding: 3%;
+    width: 92%;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 3px;
+    box-shadow: 4px 8px 5px -7px rgba(0,0,0,0.10);
+    -webkit-box-shadow: 4px 8px 5px -7px rgba(0,0,0,0.29);
+    -moz-box-shadow: 4px 8px 5px -7px rgba(0,0,0,0.29);
+}
+
+.start__button button {
+    margin-top: 4%;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 5px;
+    box-shadow: 4px 8px 5px -7px rgba(0,0,0,0.29);
+    -webkit-box-shadow: 4px 8px 5px -7px rgba(0,0,0,0.29);
+    -moz-box-shadow: 4px 8px 5px -7px rgba(0,0,0,0.29);
+    color: #FFFF;
+    padding: 3%;
+    width: 100%;
+    border: none;
+    background-color: hsl(224, 93%, 58%);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(224, 93%, 58%, .8);
+}
+
+/* ======================= DESCRIPTION SECTION ============================== */
+
+.description__section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color:  hsl(240, 75%, 98%);
+    padding-bottom: 8%;
+}
+
+.description__section img {
+    padding: 5% 0;
+}
+
+.description__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 3%;
+    text-align: left;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    padding: 5%;
+    margin-top: 2.5%;
+    font-size: 1em;
+    text-align: center;
+}
+
+.description__section p {
+    text-align: left;
+    padding: 3% 5%;
+    font-size: 0.8em;
+}
+
+.action__link {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+    margin: 2.5% 0;
+    padding: 1% 0;
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(170, 45%, 43%);
+    font-size: 0.6em;
+    font-weight: 700;
+}
+
+.action__link img {
+    width: 13%;
+    padding: 0;
+}
+
+.ceo__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'Open Sans', sans-serif;
+    margin: 5%;
+    width: 90%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 3%;
+    border-radius: 5px;
+
+}
+
+.ceo__card img {
+    width: 5%;
+    padding: 5% 5% 0 5%;   
+}
+
+.ceo__card p {
+    padding: 2% 4%;
+    font-size: 0.6em;
+}
+
+.ceo__picture {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5%;
+}
+
+.ceo__picture img {
+    width: 10%;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.name__center {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-size: 0.6em;
+    width: 50%;
+}
+
+/* ======================= CALL TO ACTION SECTION ============================== */
+
+.action__card {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(238, 22%, 44%);
+    padding-bottom: 15%;
+    width: 100%;
+}
+
+.action__card h2 {
+    color: #FFFF;
+    padding-top: 8%;
+}
+
+.action__card p {
+    color: #FFFF;
+    text-align: center;
+    padding: 10%;
+}
+
+.action__card input {
+    width: 70%;
+}
+
+.action__card button {
+    width: 75%;
+}
+
+.action__card .start__button {
+    width: 100%;
+}
+
+.action__card .start__button button {
+    width: 75%;
+}
+
+/* ======================= FOOTER ============================== */
+
+footer {
+    background-color: hsl(243, 87%, 12%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+footer section {
+    width: 100%;
+}
+
+.contact__footer {
+    width: 100%;
+}
+
+.contact__footer a {
+    padding: 0 8%;
+    width: 15%;
+}
+
+.contact__footer a img {
+    width: 50%;
+}
+
+.contact__flex {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact__flex div {
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+    width: 90%;
+    margin-bottom: 2%;
+}
+
+.contact__flex p {
+    padding: 2%;
+    color: #FFFF;
+}
+
+.contact__flex img {
+    width: 7%;
+    padding: 0;
+    margin-right: 3%;
+}
+
+.contact__footer ul {
+    padding-left: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 8% 0;
+}
+
+.contact__footer ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.contact__footer ul li a {
+    font-size: 1em;
+    color: #FFFF;
+    font-family: 'Open Sans', sans-serif;
+    padding: 2% 0;
+}
+
+.socialmedia__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialmedia__links a {
+    width: 10%;
+}
+
+.socialmedia__links img {
+    width: 60%;
+}
+
+.attribution__footer {
+    width: 100%;
+}
+
+.attribution__footer p {
+    color: #FFFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.6em;
+    text-align: center;
+}
+
+.attribution__footer a {
+    font-size: 1em;
+    color: #FFFF;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+/* ======================= MEDIAS ============================== */
+
+@keyframes main__efx {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ======================= MEDIAS ============================== */
+
+@media (min-width: 768px) {
+
+nav ul li {
+    width: 60%;
+}
+
+nav ul li a {
+    font-size: 1.5em;
+}
+
+.presentation__section {
+    flex-direction: row-reverse;
+}
+
+.presentation__section img {
+    width: 50%;
+}
+
+.image__presentation {
+    padding: 0;
+}
+
+.flex__presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3%;
+    text-align: left;
+}
+
+.description__section {
+    flex-direction: row-reverse;
+}
+
+.description__section img {
+    width: 50%;
+}
+
+.description__section p {
+    font-size: 1em;}
+
+.description__flex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 3%;
+    text-align: left;
+}
+
+.action__link {
+    margin-left: 5%;
+    justify-content: flex-start;
+}
+
+.action__link img {
+    width: 15%;
+}
+
+.action__link a {
+    font-size: 0.8em;
+}
+
+.action__link a:active {
+    color: hsl(170, 45%, 43%, 0.5);
+}
+
+.action__link a:hover {
+    color: hsl(170, 45%, 43%, 0.5);
+}
+
+.ceo__card {
+    width: 75%;
+}
+
+.ceo__card img {
+    width: 8%;
+}
+
+.ceo__card p {
+    font-size: 0.8em;
+}
+
+.action__card {
+    flex-direction: row;
+    padding-bottom: 1%;
+}
+
+.action__card .start__button {
+    flex-direction: column;
+}
+
+.action__card .start__button button {
+    width: 50%;
+}
+
+.action__card .start__button input {
+    margin-bottom: 2.5%;
+    width: 80%;
+}
+
+.ceo__picture img {
+    width: 10%;
+}
+
+.acces__flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.acces__flex h2 {
+    padding-left: 10%;
+    margin-top: 8%;
+}
+
+.acces__flex p {
+    text-align: left;
+    padding: 0 0 10% 10%;
+}
+
+.start__button {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 8%;
+    width: 90%;
+}
+
+.start__button input {
+    margin: 0 3% 0 0;
+    width: 50%;
+}
+
+.start__button button {
+    margin-top: 0;
+}
+
+.contact__footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.info__footer--flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.contact__footer a {
+    width: 50%;
+    padding: 0;
+}
+
+.contact__footer img {
+    padding-left: 10%;
+}
+
+.contact__footer ul {
+    margin: 0;
+    padding: 0 3% 3% 3%;
+    width: 30%;
+}
+
+.contact__footer ul li a{
+    padding: 5% 0;
+}
+
+.contact__flex img {
+    width: 5%;
+}
+
+.socialmedia__links a {
+    width: 25%;
+}
+
+.socialmedia__links img {
+    width: 50%;
+}
+
+.attribution__footer p {
+    font-size: 0.7em;
+}
+
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        padding-bottom: 0;
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .acces__flex h2 {
+        margin-top: 5%;
+    }
+
+    .ceo__picture img {
+        width: 13%;
+    }
+
+    .name__center {
+        font-size: 0.8em;
+    } 
+
+}
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
+
+
+/* ## Colors
+
+### Primary
+
+- Very Dark Blue: hsl(243, 87%, 12%)
+- Desaturated Blue: hsl(238, 22%, 44%)
+
+
+### Accent
+
+- Bright Blue: hsl(224, 93%, 58%)
+- Moderate Cyan: hsl(170, 45%, 43%)
+
+### Neutral
+
+- Light Grayish Blue: hsl(240, 75%, 98%)
+- Light Gray: hsl(0, 0%, 75%)
+
+
+## Typography
+
+### Headings, Call-to-actions, Header Navigation
+
+- Family: [Raleway](https://fonts.google.com/specimen/Raleway)
+- Weights: 400, 700
+
+### Body
+
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400 */
