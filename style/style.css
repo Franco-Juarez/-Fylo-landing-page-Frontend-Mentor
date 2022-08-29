@@ -55,7 +55,9 @@ nav ul li a {
 }
 
 .home__link {
-    padding: 5%;
+    padding: 3% 5% 3% 8%;
+    width: 25%;
+
 }
 
 .home__link img {
